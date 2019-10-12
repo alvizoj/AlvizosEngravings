@@ -8,11 +8,6 @@ General Classes
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .Header {
     background-image: url("./resources/pattern.png");
     background-repeat: repeat;
@@ -34,11 +29,6 @@ General Classes
     padding-top: 3px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
 /*
 Text Classes
  */
@@ -46,6 +36,7 @@ Text Classes
     font-size: 3em;
     font-weight: 500;
     background: linear-gradient(top, #fceabb 0%, #fccd4d 50%, #fab500 51%, #fbdf93 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Quicksand', sans-serif;
@@ -57,11 +48,9 @@ Text Classes
 
 /*
 -------------------------------
-MEDIA QUERIES for Mobile Phones
+MEDIA QUERIES for Mobile Devices
 -------------------------------
  */
-
-/* Title Text */
 @media only screen and (max-width: 500px) {
     .Header-title {
         font-size: 9vw;
