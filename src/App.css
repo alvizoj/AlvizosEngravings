@@ -15,13 +15,29 @@
 }
 
 .App-title {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 .App-intro {
-  font-size: large;
+    font-size: large;
 }
 
+.Footer {
+    background-color: lightslategrey; /* Footer Background Color*/
+    color: darkred; /* Footer Text Background Color*/
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding-top: 3px;
+}
+
+@media only screen and (max-width: 321px) {
+    /* For mobile phones: */
+    .Footer {
+        font-size: 4.7vw;
+    }
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
