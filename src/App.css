@@ -1,5 +1,7 @@
 /*
+---------------
 General Classes
+---------------
  */
 
 .App {
@@ -24,7 +26,7 @@ General Classes
     text-align: center;
     position: fixed;
     width: 100%;
-    bottom: 0;
+    bottom: 0; /* Fixed footer @ bottom */
     padding-top: 3px;
 }
 
@@ -45,23 +47,31 @@ Text Classes
 }
 
 /*
-MEDIA QUERIES - Resizing
+-------------------------------
+MEDIA QUERIES for Mobile Phones
+-------------------------------
  */
-@media only screen and (max-width: 330px) {
-    /* For mobile phones: */
-    .Footer {
-        font-size: 4.7vw;
-        color: aqua;
+
+/* Title Text */
+@media only screen and (max-width: 250px) {
+    .App-title {
+        font-size: 9vw;
     }
+}
+
+/* Intro Text */
+@media only screen and (max-width: 407px) {
     .App-intro {
-        font-size: 5vw;
+        font-size: 4.6vw;
         scroll-padding-inline-start: 3px;
         scroll-padding-inline-end: 3px;
     }
 }
 
-@media only screen and (max-width: 250px) {
-    .App-title {
-        font-size: 9vw;
+/* Footer */
+@media only screen and (max-width: 330px) {
+    .Footer {
+        font-size: 4.7vw;
+        color: aqua;
     }
 }
