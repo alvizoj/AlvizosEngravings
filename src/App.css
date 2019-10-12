@@ -63,6 +63,9 @@ MEDIA QUERIES for Mobile Phones
     .App-title {
         font-size: 9vw;
     }
+    .Header-title {
+        font-size: 5vw;
+    }
 }
 
 /* Intro Text */
