@@ -13,11 +13,14 @@ General Classes
   height: 80px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.Header {
+    background-color: slategray;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .Footer {
@@ -38,8 +41,11 @@ General Classes
 /*
 Text Classes
  */
-.App-title {
+.Header-title {
     font-size: 1.5em;
+    font-weight: 500;
+    color: cyan;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .App-intro {
