@@ -14,7 +14,8 @@ General Classes
 }
 
 .Header {
-    background-color: slategray;
+    background-image: url("./resources/pattern.png");
+    background-repeat: repeat;
     height: 150px;
     align-items: center;
     justify-content: center;
@@ -42,9 +43,11 @@ General Classes
 Text Classes
  */
 .Header-title {
-    font-size: 1.5em;
+    font-size: 3em;
     font-weight: 500;
-    color: cyan;
+    background: linear-gradient(top, #fceabb 0%, #fccd4d 50%, #fab500 51%, #fbdf93 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -59,16 +62,13 @@ MEDIA QUERIES for Mobile Phones
  */
 
 /* Title Text */
-@media only screen and (max-width: 250px) {
-    .App-title {
-        font-size: 9vw;
-    }
+@media only screen and (max-width: 500px) {
     .Header-title {
-        font-size: 5vw;
+        font-size: 9vw;
     }
 }
 
-/* Intro Text */
+
 @media only screen and (max-width: 407px) {
     .App-intro {
         font-size: 4.6vw;
@@ -77,7 +77,6 @@ MEDIA QUERIES for Mobile Phones
     }
 }
 
-/* Footer */
 @media only screen and (max-width: 330px) {
     .Footer {
         font-size: 4.7vw;
