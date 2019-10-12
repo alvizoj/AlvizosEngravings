@@ -1,3 +1,7 @@
+/*
+General Classes
+ */
+
 .App {
   text-align: center;
 }
@@ -14,14 +18,6 @@
   color: white;
 }
 
-.App-title {
-    font-size: 1.5em;
-}
-
-.App-intro {
-    font-size: large;
-}
-
 .Footer {
     background-color: lightslategrey; /* Footer Background Color*/
     color: darkred; /* Footer Text Background Color*/
@@ -32,6 +28,25 @@
     padding-top: 3px;
 }
 
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/*
+Text Classes
+ */
+.App-title {
+    font-size: 1.5em;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+/*
+MEDIA QUERIES - Resizing
+ */
 @media only screen and (max-width: 330px) {
     /* For mobile phones: */
     .Footer {
@@ -49,9 +64,4 @@
     .App-title {
         font-size: 9vw;
     }
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
