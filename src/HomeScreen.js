@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Button from 'react-bootstrap/lib/Button'
 
 export default class HomeScreen extends React.Component {
     componentDidMount(){
@@ -11,7 +12,7 @@ export default class HomeScreen extends React.Component {
             <div className="App">
                 <header className="Header">
                     <h1 className="Header-title">Alvizo's Engravings</h1>
-                    <p> </p>
+                    <Button>Email</Button>
                 </header>
                 <p className="App-intro">
                     To get started, edit <code>src/App.js</code> and save to reload.
