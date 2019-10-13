@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './HomeScreen.css';
 import Button from 'react-bootstrap/lib/Button'
 
 export default class HomeScreen extends React.Component {
@@ -11,12 +11,12 @@ export default class HomeScreen extends React.Component {
         return (
             <div className="App">
                 <header className="Header">
-                    <h1 className="Header-title">Alvizo's Engravings</h1>
-                    <Button>Email</Button>
+                    <h1 className="HeaderTitleText">Alvizo's Engravings</h1>
                 </header>
                 <p className="App-intro">
                     To get started, edit <code>src/App.js</code> and save to reload.
                 </p>
+                <Button>Email</Button>
                 <footer className="Footer">
                     <b>{'\u00A9'} 2019 Joseph Alvizo. All rights reserved.</b>
                 </footer>
