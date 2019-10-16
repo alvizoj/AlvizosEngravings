@@ -52,9 +52,9 @@ General Classes
   -------------------------------
    */
   @media only screen and (max-width: 500px) {
-      .Header-title {
-          font-size: 9vw;
-      }
+    .HeaderTitleText {
+        font-size: 10vw;
+    }    
   }
   
   
