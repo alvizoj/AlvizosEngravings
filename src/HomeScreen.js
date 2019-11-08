@@ -1,6 +1,6 @@
 import React from 'react';
 import './HomeScreen.css';
-import Button from 'react-bootstrap/lib/Button'
+import {Button} from 'semantic-ui-react'
 
 export default class HomeScreen extends React.Component {
     componentDidMount(){
@@ -16,7 +16,9 @@ export default class HomeScreen extends React.Component {
                 <p className="App-intro">
                     To get started, edit <code>src/App.js</code> and save to reload.
                 </p>
-                <Button>Email</Button>
+                <Button inverted className="LinkButton">
+                    Github
+                </Button>
                 <footer className="Footer">
                     <b>{'\u00A9'} 2019 Joseph Alvizo. All rights reserved.</b>
                 </footer>

@@ -28,6 +28,21 @@ General Classes
       bottom: 0; /* Fixed footer @ bottom */
       padding-top: 3px;
   }
+
+  .LinkButton {
+    box-shadow: 0 0 0 2px #7d8cbb inset!important;;
+    /*background: transparent none;*/
+    /*text-shadow: none !important;*/
+    /*margin: 0px 8px !important;*/
+    color: #7d8cbb !important;
+    border-color: #7d8cbb !important;
+}
+
+.LinkButton:hover {
+    background: #7d8cbb !important;
+    box-shadow: 0 0 0 2px #7d8cbb inset!important;
+    color: white !important;
+}
   
   /*
   Text Classes
