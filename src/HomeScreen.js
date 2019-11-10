@@ -1,6 +1,6 @@
 import React from 'react';
 import './HomeScreen.css';
-import {Button} from 'semantic-ui-react'
+import {Button, Segment} from 'semantic-ui-react'
 
 export default class HomeScreen extends React.Component {
     componentDidMount(){
@@ -16,9 +16,15 @@ export default class HomeScreen extends React.Component {
                 <p className="App-intro">
                     To get started, edit <code>src/App.js</code> and save to reload.
                 </p>
-                <Button inverted className="LinkButton">
-                    Github
-                </Button>
+                <div>
+                    <Button inverted className="CustomPurpleButton" onClick={() => window.open('https://www.github.com/alvizoj')}>
+                        Github
+                    </Button>
+                    <Button inverted color="red">
+                        Red
+                    </Button>
+                </div>
+                
                 <footer className="Footer">
                     <b>{'\u00A9'} 2019 Joseph Alvizo. All rights reserved.</b>
                 </footer>

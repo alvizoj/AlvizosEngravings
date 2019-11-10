@@ -29,7 +29,7 @@ General Classes
       padding-top: 3px;
   }
 
-  .LinkButton {
+  .CustomPurpleButton {
     box-shadow: 0 0 0 2px #7d8cbb inset!important;;
     /*background: transparent none;*/
     /*text-shadow: none !important;*/
@@ -38,9 +38,24 @@ General Classes
     border-color: #7d8cbb !important;
 }
 
-.LinkButton:hover {
+.CustomPurpleButton:hover {
     background: #7d8cbb !important;
     box-shadow: 0 0 0 2px #7d8cbb inset!important;
+    color: white !important;
+}
+
+.CustomRedButton {
+    box-shadow: 0 0 0 2px red inset!important;;
+    /*background: transparent none;*/
+    /*text-shadow: none !important;*/
+    /*margin: 0px 8px !important;*/
+    color: red !important;
+    border-color: red !important;
+}
+
+.CustomRedButton:hover {
+    background: red !important;
+    box-shadow: 0 0 0 2px red inset!important;
     color: white !important;
 }
   
