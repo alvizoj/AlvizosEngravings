@@ -1,0 +1,60 @@
+  /*
+  Button Classes
+   */
+
+.ui.inverted.button {
+    background: transparent none;
+    box-shadow: 0 0 0 2px inset!important;
+    text-shadow: none!important;
+}
+
+.ui.inverted.button:hover {
+    box-shadow: none!important;
+    text-shadow: none!important;
+}
+
+.CustomButton { 
+    box-shadow: 0 0 0 2px #7d8cbb inset!important; 
+    /*background: transparent none;*/ 
+    /*text-shadow: none !important;*/ 
+    /*margin: 0px 8px !important;*/ 
+    color: #7d8cbb !important; 
+    border-color: #7d8cbb !important; 
+} 
+ 
+.CustomButton:hover { 
+    background: #7d8cbb !important; 
+    box-shadow: 0 0 0 2px #7d8cbb inset!important; 
+    color: white !important; 
+} 
+
+  .CustomPurpleButton {
+    box-shadow: 0 0 0 2px #7d8cbb !important;
+    background: transparent none;
+    /*text-shadow: none !important;*/
+    /*margin: 0px 8px !important;*/
+    color: #7d8cbb !important;
+    border-color: #7d8cbb !important;
+}
+
+.CustomPurpleButton:hover {
+    background: #7d8cbb !important;
+    box-shadow: 0 0 0 2px #7d8cbb inset!important;
+    color: white !important;
+}
+
+.CustomRedButton {
+    box-shadow: 0 0 0 2px red inset!important;;
+    /*background: transparent none;*/
+    /*text-shadow: none !important;*/
+    /*margin: 0px 8px !important;*/
+    color: red !important;
+    border-color: red !important;
+}
+
+.CustomRedButton:hover {
+    background: red !important;
+    box-shadow: 0 0 0 2px red inset!important;
+    color: white !important;
+}
+  
