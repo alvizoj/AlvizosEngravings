@@ -1,8 +1,8 @@
 import React from 'react';
 import './HomeScreen.css';
-// import './Button.css';
-// import {Button} from 'semantic-ui-react';
-import Button from 'react-bootstrap/lib/Button';
+import './Button.css';
+import {Button} from 'semantic-ui-react';
+//import Button from 'react-bootstrap/lib/Button';
 
 
 export default class HomeScreen extends React.Component {
@@ -20,10 +20,10 @@ export default class HomeScreen extends React.Component {
                     To get started, edit <code>src/App.js</code> and save to reload.
                 </p>
                 <div>
-                    {/* <Button inverted className="CustomButton" onClick={() => window.open('https://www.github.com/alvizoj')}>
+                    <Button inverted className="CustomButton" onClick={() => window.open('https://www.github.com/alvizoj')}>
                         Github
-                    </Button> */}
-                    <Button variant="outline-dark">
+                    </Button>
+                    <Button inverted color="black" className="CustomBlackButton">
                         Dark
                     </Button>
                 </div>
