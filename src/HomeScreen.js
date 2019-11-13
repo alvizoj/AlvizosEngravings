@@ -23,7 +23,7 @@ export default class HomeScreen extends React.Component {
                     <Button inverted className="CustomButton" onClick={() => window.open('https://www.github.com/alvizoj')}>
                         Github
                     </Button>
-                    <Button inverted color="black" className="CustomBlackButton">
+                    <Button inverted className="CustomBlackButton">
                         Dark
                     </Button>
                 </div>
