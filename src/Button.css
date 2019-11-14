@@ -42,3 +42,9 @@
     box-shadow: 0 0 0 2px black inset!important; 
     color: white !important; 
 } 
+
+.CustomBlackButton:active {
+    background: black !important; 
+    box-shadow: 0 0 0 2px black inset!important; 
+    color: white !important; 
+}

@@ -1,15 +1,34 @@
 /*
 ---------------
-General Classes
+Containers
 ---------------
  */
 
- .App {
+
+/* GalleryEntry: 1-column,2-row grid of photo and it's description */
+.GalleryEntry {
+    display: grid;
+}
+
+.GalleryEntryItem {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+}
+
+.Site {
+    display: grid;
     text-align: center;
   }
   
-  .Header {
-      background-image: url("./resources/pattern.png");
+
+/*
+---------------
+General Classes
+---------------
+ */
+   
+.Header {
+    background-image: url("./resources/pattern.png");
       background-repeat: repeat;
       height: 150px;
       align-items: center;
@@ -40,6 +59,12 @@ General Classes
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: 'Quicksand', sans-serif;
+  }
+
+  .HeaderDescText {
+      font-family: 'ZCOOL KuaiLe', cursive;
+      font-size: 1.5em;
+      color: silver;
   }
   
   .App-intro {
