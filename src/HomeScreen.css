@@ -4,9 +4,16 @@ Containers
 ---------------
  */
 
+.html,body {
+	height: 100%;
+	position: relative;
+}
+
 .Site {
 	display: grid;
 	text-align: center;
+	min-height: 100%;
+	padding-bottom: 2rem;
   }
 
 /* GalleryEntry: 1-column,2-row grid of photo and it's description */
