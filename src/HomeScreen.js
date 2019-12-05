@@ -2,13 +2,24 @@ import React from 'react';
 import './HomeScreen.css';
 import './Button.css';
 import {Button} from 'semantic-ui-react';
-//import Button from 'react-bootstrap/lib/Button';
 import picture from './resources/me.png'
 
 
 export default class HomeScreen extends React.Component {
     componentDidMount(){
         document.title = "Alvizo's Engravings"
+    }
+
+    constructor(props) {
+        super(props)
+        this.state = {show: false}
+
+        this.toggleImages = this.toggleImages.bind(this);
+    }
+
+    toggleImages = () => {
+        const {show} = this.state;
+        this.setState({show: !show})
     }
 
     render() {
@@ -18,7 +29,7 @@ export default class HomeScreen extends React.Component {
                     <h1 className="HeaderTitleText">Alvizo's Engravings</h1>
                 </header>
                 <p className="BusinessDescription">
-                    <p className="HeaderDescText">Metal Engraving Services</p>
+                <p className="HeaderDescText">Metal Engraving Services</p>
                     DESCRIPTION OF BUSINESS<br></br>
                     Based in Delano, CA
                 </p>
@@ -28,23 +39,38 @@ export default class HomeScreen extends React.Component {
                         Engraving of AR-15. Price is $50 per 5 square inch engraving.
                     </div>
                 </div>
-                <div className="GalleryEntry">
-                    <img src={picture}/>
-                    <div >
-                        Engraving of AR-15. Price is $50 per 5 square inch engraving.
-                    </div>
-                </div>
-                <div className="GalleryEntry">
-                    <img src={picture} />
-                    <div >
-                        Engraving of AR-15. Price is $50 per 5 square inch engraving.
-                    </div>
+                <div>
+                    <Button inverted color='red' onClick={this.toggleImages}>Show More</Button>
+                    <br/> <br/>
+                    {this.state.show && <ExtraImages/>}
+
                 </div>
                 
                 <footer className="Footer">
                     <b>{'\u00A9'} 2019 Joseph Alvizo. All rights reserved.</b>
                 </footer>
             </div> /* Site Container */
+        );
+    }
+}
+
+class ExtraImages extends React.Component{
+    render(){
+        return(
+        <div>
+            <div className="GalleryEntry">
+                <img src={picture}/>
+                <div >
+                    Engraving of AR-15. Price is $50 per 5 square inch engraving.
+                </div>
+            </div>
+            <div className="GalleryEntry">
+                <img src={picture}/>
+                <div >
+                    Engraving of AR-15. Price is $50 per 5 square inch engraving.
+                </div>
+            </div> 
+        </div>
         );
     }
 }

@@ -28,6 +28,12 @@
     color: white !important; 
 } 
 
+.CustomButton:active { 
+    background: #7d8cbb !important; 
+    box-shadow: 0 0 0 2px #7d8cbb inset!important; 
+    color: white !important; 
+} 
+
 .CustomBlackButton { 
     box-shadow: 0 0 0 2px black inset!important; 
     /*background: transparent none;*/ 
