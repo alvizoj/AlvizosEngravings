@@ -7,93 +7,107 @@ Containers
 
 /* GalleryEntry: 1-column,2-row grid of photo and it's description */
 .GalleryEntry {
-    display: grid;
+	display: grid;
+	grid-auto-rows: minmax(50, 150) minmax(75px, 200px);
+	font-size: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
-.GalleryEntryItem {
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  font-size: 20px;
+.GalleryEntry :nth-child(even) {
+	background-color: lightgray;
+}
+
+.GalleryEntry :nth-child(odd) {
+	background-color: black;
 }
 
 .Site {
-    display: grid;
-    text-align: center;
+	display: grid;
+	text-align: center;
   }
-  
+
+.BusinessDescription {
+	background: turquoise;
+	padding: 5px;
+	font-size: large;
+	margin: 0;
+}
 
 /*
 ---------------
 General Classes
 ---------------
  */
-   
+
 .Header {
-    background-image: url("./resources/pattern.png");
-      background-repeat: repeat;
-      height: 150px;
-      align-items: center;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
+	background-image: url("./resources/pattern.png");
+	background-repeat: repeat;
+	height: 70px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
   
   }
   
-  .Footer {
-      background-color: lightslategrey; /* Footer Background Color*/
-      color: darkred; /* Footer Text Background Color*/
-      text-align: center;
-      position: fixed;
-      width: 100%;
-      bottom: 0; /* Fixed footer @ bottom */
-      padding-top: 3px;
-  }
+.Footer {
+	background-color: lightslategrey; /* Footer Background Color*/
+	color: darkred; /* Footer Text Background Color*/
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	bottom: 0; /* Fixed footer @ bottom */
+	padding-bottom: 6px;
+	padding-top: 3px
+}
 
-  /*
-  Text Classes
-   */
-  .HeaderTitleText {
-      font-size: 3em;
-      font-weight: 500;
-      background: linear-gradient(#fceabb 0%, #fccd4d 50%, #fab500 51%, #fbdf93 100%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-family: 'Quicksand', sans-serif;
-  }
+/*
+Text Classes
+*/
+.HeaderTitleText {
+	font-size: 3em;
+	font-weight: 500;
+	background: linear-gradient(#fceabb 0%, #fccd4d 50%, #fab500 51%, #fbdf93 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: 'Quicksand', sans-serif;
+}
 
-  .HeaderDescText {
-      font-family: 'ZCOOL KuaiLe', cursive;
-      font-size: 1.5em;
-      color: silver;
-  }
-  
-  .App-intro {
-      font-size: large;
-  }
-  
-  /*
-  -------------------------------
-  MEDIA QUERIES for Mobile Devices
-  -------------------------------
-   */
-  @media only screen and (max-width: 500px) {
-    .HeaderTitleText {
-        font-size: 10vw;
-    }    
-  }
-  
-  
-  @media only screen and (max-width: 407px) {
-      .App-intro {
-          font-size: 4.6vw;
-          scroll-padding-inline-start: 3px;
-          scroll-padding-inline-end: 3px;
-      }
-  }
-  
-  @media only screen and (max-width: 330px) {
-      .Footer {
-          font-size: 4.7vw;
-          color: aqua;
-      }
-  }
+.HeaderDescText {
+	font-family: 'ZCOOL KuaiLe', cursive;
+	font-size: 1.5em;
+	color: black;
+	margin: 0px
+}
+
+.App-intro {
+	font-size: large;
+}
+
+/*
+-------------------------------
+MEDIA QUERIES for Mobile Devices
+-------------------------------
+*/
+@media only screen and (max-width: 500px) {
+	.HeaderTitleText {
+		font-size: 10vw;
+	}    
+}
+
+
+@media only screen and (max-width: 407px) {
+	.App-intro {
+		font-size: 4.6vw;
+		scroll-padding-inline-start: 3px;
+		scroll-padding-inline-end: 3px;
+	}
+}
+
+@media only screen and (max-width: 330px) {
+	.Footer {
+		font-size: 4.7vw;
+		color: aqua;
+	}
+}
