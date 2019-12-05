@@ -12,14 +12,17 @@ export default class HomeScreen extends React.Component {
 
     constructor(props) {
         super(props)
-        this.state = {show: false}
-
+        this.state = {show: false, buttonText: 'Show More'}
         this.toggleImages = this.toggleImages.bind(this);
     }
 
     toggleImages = () => {
         const {show} = this.state;
         this.setState({show: !show})
+        if (this.state.buttonText === 'Show More')
+            this.setState({buttonText: 'Show Less'})
+        if (this.state.buttonText === 'Show Less')
+            this.setState({buttonText: 'Show More'})
     }
 
     render() {
@@ -40,7 +43,7 @@ export default class HomeScreen extends React.Component {
                     </div>
                 </div>
                 <div>
-                    <Button inverted color='red' onClick={this.toggleImages}>Show More</Button>
+                    <Button color='red' onClick={this.toggleImages}>{this.state.buttonText}</Button>
                     <br/> <br/>
                     {this.state.show && <ExtraImages/>}
 
