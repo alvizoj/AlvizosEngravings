@@ -4,6 +4,10 @@ Containers
 ---------------
  */
 
+.Site {
+	display: grid;
+	text-align: center;
+  }
 
 /* GalleryEntry: 1-column,2-row grid of photo and it's description */
 .GalleryEntry {
@@ -19,12 +23,9 @@ Containers
 
 .GalleryEntry :nth-child(odd) {
 	background-color: black;
+	margin-left: auto; 
+	margin-right: auto; 
 }
-
-.Site {
-	display: grid;
-	text-align: center;
-  }
 
 .BusinessDescription {
 	background: turquoise;
