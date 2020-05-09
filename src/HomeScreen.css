@@ -6,13 +6,6 @@ Containers
 
 .html,body {
 	height: 100%;
-	width: 100%;
-	position: relative;
-	overflow-x: hidden;
-}
-
-/* .html,body {
-	height: 100%;
     margin: 0;
 	padding: 0;
 	overflow-x: hidden;
@@ -23,15 +16,16 @@ body {
 	margin: 0px;
     padding: 0px 0px 0px;
     text-align: center;
-} */
+}
 
 .Site {
 	text-align: center;
 	min-height: 100%;
+	min-width: 100%;
 	padding-bottom: 2rem;
   }
 
-/* GalleryEntry: 1-column,2-row grid of photo and it's description */
+/* Gallery: 1-column,2-row grid of photo and it's description */
 .GalleryEntry {
 	display: grid;
 	grid-template-rows: auto 1fr;
@@ -39,11 +33,11 @@ body {
 	/*border: 1px solid rgba(0, 0, 0, 0.8); */
 }
 
-.GalleryEntry :nth-child(even) {
+.Gallery :nth-child(even) {
 	background-color: lightgray;
 }
 
-.GalleryEntry :nth-child(odd) {
+.Gallery :nth-child(odd) {
 	background-color: black;
 	margin-left: auto; 
 	margin-right: auto; 
@@ -113,6 +107,14 @@ Text Classes
 
 .App-intro {
 	font-size: large;
+}
+
+/*
+Responsive Images
+*/
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 /*
