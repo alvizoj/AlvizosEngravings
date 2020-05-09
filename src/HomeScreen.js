@@ -28,7 +28,7 @@ export default class HomeScreen extends React.Component {
 
     render() {
         return (
-            <div className="">
+            <div className="Site">
                 <header className="Header">
                     <h1 className="HeaderTitleText">Alvizo's Engravings</h1>
                 </header>
