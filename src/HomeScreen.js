@@ -1,7 +1,7 @@
 import React from 'react';
 import './HomeScreen.css';
 import './Button.css';
-import {Button, Segment} from 'semantic-ui-react';
+import {Button} from 'semantic-ui-react';
 import picture from './resources/me.png'
 import gmail from './resources/gmail.png'
 
@@ -28,7 +28,7 @@ export default class HomeScreen extends React.Component {
 
     render() {
         return (
-            <div className="Site">
+            <div className="">
                 <header className="Header">
                     <h1 className="HeaderTitleText">Alvizo's Engravings</h1>
                 </header>
@@ -39,14 +39,12 @@ export default class HomeScreen extends React.Component {
                         Based in Delano, CA
                 </div>
 
-                <div className="GalleryEntry">
+                <div className="Gallery">
                     <img src={picture} alt="pic"/>
-                    <div >
-                        Engraving of AR-15. Price is $50 per 5 square inch engraving.
-                        <br></br>
-                        <Button color='red' onClick={this.toggleImages}>{this.state.buttonText}</Button>
-                        {this.state.show && <ExtraImages/>}
-                    </div>
+                    <h4>Engraving of AR-15. Price is $50 per 5 square inch engraving.</h4>
+                    <br></br>
+                    <button color='red' onClick={this.toggleImages}>{this.state.buttonText}</button>
+                    {this.state.show && <ExtraImages/>}
                 </div>
 
                 <h2 className="HeaderTitleText">Contact me</h2>
@@ -65,11 +63,9 @@ export default class HomeScreen extends React.Component {
 
 function PicAndDescr() {
     return(
-        <div className="GalleryEntry">
+        <div>
             <img src={picture} alt="pic"/>
-            <div >
-                Engraving of AR-15. Price is $50 per 5 square inch engraving.
-            </div>
+            <h4>Engraving of AR-15. Price is $50 per 5 square inch engraving.</h4>
         </div>
     );
 }
